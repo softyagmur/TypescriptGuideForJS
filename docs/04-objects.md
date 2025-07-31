@@ -1,22 +1,25 @@
+
 # Nesneler, Sınıflar ve Arayüzler
 
-Bu bölümde TypeScript'te nesne yapıları, sınıflar (classes) ve arayüzler (interfaces) konularını öğreneceksiniz.
+Bu bölümde TypeScript'te nesne yapıları, sınıflar (classes) ve arayüzler (interfaces) konularını öğreneceksiniz. Her başlık altında kısa açıklama ve örnekler bulacaksınız.
 
 ## Nesne Tipleri
 
+Bir nesnenin sahip olması gereken alanları ve tiplerini doğrudan belirtebilirsiniz:
+
 ```typescript
-// Bir nesne (object) tanımı ve tip belirtimi
 const kisi: { isim: string; yas: number } = {
   isim: "Yağmur", // isim alanı string tipinde
-  yas: 16, // yas alanı number tipinde
+  yas: 16          // yas alanı number tipinde
 };
-// Bu şekilde nesnenin sahip olması gereken alanları ve tiplerini belirtebilirsiniz.
+// Bu şekilde, nesnenin hangi alanlara sahip olacağını ve tiplerini açıkça belirtmiş olursunuz.
 ```
 
-## Sınıflar
+## Sınıflar (Classes)
+
+Sınıflar, nesne tabanlı programlamada tekrar kullanılabilir ve organize kod yazmak için kullanılır. Bir sınıf, özellikler (property) ve metotlar (method) içerebilir.
 
 ```typescript
-// Sınıf (class) tanımı
 class Hayvan {
   isim: string; // Her hayvanın bir ismi olacak
 
@@ -30,13 +33,16 @@ class Hayvan {
     console.log("Ses çıkarıyor");
   }
 }
-// Sınıflar, nesne tabanlı programlamada tekrar kullanılabilir ve organize kod yazmak için kullanılır.
+
+const kopek = new Hayvan("Karabas");
+kopek.sesCikar(); // "Ses çıkarıyor"
 ```
 
-## Kalıtım
+## Kalıtım (Inheritance)
+
+Bir sınıf başka bir sınıftan özellik ve metotları miras alabilir. Alt sınıf, üst sınıfın metotlarını kendine göre özelleştirebilir (override).
 
 ```typescript
-// Kalıtım (inheritance) örneği
 class Kedi extends Hayvan {
   constructor(isim: string) {
     // Üst sınıfın (Hayvan) constructor'ı çağrılır
@@ -44,17 +50,20 @@ class Kedi extends Hayvan {
   }
 
   sesCikar(): void {
-    // Kedi sınıfı, Hayvan sınıfındaki sesCikar metodunu kendine göre özelleştirir (override)
+    // Kedi sınıfı, Hayvan sınıfındaki sesCikar metodunu kendine göre özelleştirir
     console.log("Miyav!");
   }
 }
-// Bu şekilde bir sınıf başka bir sınıftan özellik ve metotları miras alabilir.
+
+const pamuk = new Kedi("Pamuk");
+pamuk.sesCikar(); // "Miyav!"
 ```
 
-## Arayüzler
+## Arayüzler (Interfaces)
+
+Arayüzler, nesnelerin hangi alanlara ve metotlara sahip olması gerektiğini belirler. Kodun daha okunabilir ve sürdürülebilir olmasını sağlar.
 
 ```typescript
-// Arayüz (interface) tanımı
 interface Arac {
   marka: string; // Aracın markası
   model: string; // Aracın modeli
@@ -70,5 +79,5 @@ const araba: Arac = {
     console.log("Araba çalıştı");
   },
 };
-// Arayüzler, nesnelerin hangi alanlara ve metotlara sahip olması gerektiğini belirler.
+// Bu şekilde, bir nesnenin belirli bir yapıya uymasını garanti altına alırsınız.
 ```
