@@ -1,4 +1,3 @@
-
 # Nesneler, Sınıflar ve Arayüzler
 
 Bu bölümde TypeScript'te nesne yapıları, sınıflar (classes) ve arayüzler (interfaces) konularını öğreneceksiniz. Her başlık altında kısa açıklama ve örnekler bulacaksınız.
@@ -10,7 +9,7 @@ Bir nesnenin sahip olması gereken alanları ve tiplerini doğrudan belirtebilir
 ```typescript
 const kisi: { isim: string; yas: number } = {
   isim: "Yağmur", // isim alanı string tipinde
-  yas: 16          // yas alanı number tipinde
+  yas: 16, // yas alanı number tipinde
 };
 // Bu şekilde, nesnenin hangi alanlara sahip olacağını ve tiplerini açıkça belirtmiş olursunuz.
 ```
