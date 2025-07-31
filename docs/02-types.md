@@ -21,10 +21,14 @@ Bu bölümde TypeScript'in sunduğu temel tipleri ve tip sistemini öğreneceksi
 const sayi: number = 17; // number tipi: Sayısal bir değer
 const isim: string = "İbrahim"; // string tipi: Metinsel bir değer
 const aktif: boolean = true; // boolean tipi: Doğru/yanlış (true/false) değeri yani bilgisayardaki 0 ile 1 gibi
-const sayilarDizisi: number[] = [1,2,3,4,5,6,7,8,9,10]; // number[] tipi: Sayılardan oluşan bir dizi
+const sayilarDizisi: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; // number[] tipi: Sayılardan oluşan bir dizi
 const metinlerDizisi: string[] = ["1", "2", "3"]; // string[] tipi: Metinlerden oluşan bir dizi
-const tupleOrnegi: [string,number] = ["Yaşınız:", 86]; // tuple tipi: Sıralı ve sabit uzunlukta farklı tipte değerler içeren dizi
-enum Renk { kirmizi,yesil,mavi } // enum tipi: Sabit değerler kümesi (kirmizi=0, yesil=1, mavi=2)
+const tupleOrnegi: [string, number] = ["Yaşınız:", 86]; // tuple tipi: Sıralı ve sabit uzunlukta farklı tipte değerler içeren dizi
+enum Renk {
+  kirmizi,
+  yesil,
+  mavi,
+} // enum tipi: Sabit değerler kümesi (kirmizi=0, yesil=1, mavi=2)
 const renk: Renk = Renk.kirmizi; // enum kullanımı: renk değişkeni sadece Renk enum'undaki değerleri alabilir
 ```
 
