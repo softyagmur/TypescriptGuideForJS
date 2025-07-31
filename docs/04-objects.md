@@ -1,4 +1,4 @@
-# Nesneler, Sınıflar ve Arayüzler
+# x Nesneler, Sınıflar ve Arayüzler
 
 Bu bölümde TypeScript'te nesne yapıları, sınıflar (classes) ve arayüzler (interfaces) konularını öğreneceksiniz.
 

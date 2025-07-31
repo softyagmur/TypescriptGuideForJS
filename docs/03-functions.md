@@ -63,7 +63,7 @@ Fonksiyonların tipini değişkenlere atayabilirsiniz:
 ```typescript
 // Fonksiyon tipini değişkene atama örneği
 // (a: number, b: number) => number ifadesi, iki adet number parametre alıp number döndüren bir fonksiyon tipidir
-let toplaFn: (a: number, b: number) => number = topla;
+const toplaFn: (a: number, b: number) => number = topla;
 // Artık toplaFn değişkeni, topla fonksiyonunu referans eder ve aynı şekilde kullanılabilir
 const sonuc2 = toplaFn(3, 4); // sonuc2: 7
 ```
