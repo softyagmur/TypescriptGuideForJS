@@ -17,7 +17,6 @@ Bu bölümde TypeScript'in sunduğu temel tipleri ve tip sistemini öğreneceksi
 
 ## Örnekler
 
-enum Renk { kirmizi,yesil,mavi } //
 ```typescript
 const sayi: number = 17; // number tipi: Sayısal bir değer
 const isim: string = "İbrahim"; // string tipi: Metinsel bir değer
